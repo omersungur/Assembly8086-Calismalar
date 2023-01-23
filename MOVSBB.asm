@@ -1,0 +1,10 @@
+ORG 100h
+LEA SI, a1
+LEA DI, a2
+MOV CX, 5
+CLD
+REP MOVSB
+RET  
+a1 DB 1,2,3,4,5
+a2 DB 5 DUP(0)
+
